@@ -1,0 +1,19 @@
+{
+  "name": "bidirection-binding-kata",
+  "version": "0.0.0",
+  "authors": [
+    "swzhou <swing.zhou@hotmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "underscore": "~1.6.0"
+  }
+}

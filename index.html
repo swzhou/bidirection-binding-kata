@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Bi-direction binding</title>
+</head>
+<body>
+<label for="first-input">Please input something:</label>
+<input type="text" bi-bind="name" id="first-input">
+<div>
+    Here is the value you input:
+    <span bi-bind="name"></span>
+</div>
+<label for="second-input">You can also input here:</label>
+<input id="second-input" type="text" bi-bind="name">
+<div>
+    <label for="third-input">Yet another input:</label>
+    <input id="third-input" bi-bind="anotherName">
+    <ul>
+        <li bi-bind="name"></li>
+        <li bi-bind="anotherName"></li>
+    </ul>
+</div>
+<script src="bower_components/underscore/underscore.js"></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bi-bind.js"></script>
+<!--<script src="app.js"></script>-->
+</body>
+</html>
